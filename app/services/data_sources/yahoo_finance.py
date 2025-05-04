@@ -98,14 +98,14 @@ def get_stock_data(ticker: str, start_date: datetime, end_date: datetime) -> Dic
             'prices': []
         }
 
-def get_top_stocks_data(start_date: datetime, end_date: datetime, limit: int = 150) -> Dict[str, Any]:
+def get_top_stocks_data(start_date: datetime, end_date: datetime, limit: int = 100) -> Dict[str, Any]:
     """
     Get data for top US stocks.
     
     Args:
         start_date (datetime): Start date for data
         end_date (datetime): End date for data
-        limit (int): Number of stocks to fetch (default: 150 to ensure we have enough data)
+        limit (int): Number of stocks to fetch (default: 100 to ensure we have enough data)
         
     Returns:
         Dict[str, Any]: Stock data for all tickers
